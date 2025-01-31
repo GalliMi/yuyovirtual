@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.exo-2-<uniquifier> {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trevor';
+    src: url('fonts/Trevor.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Exo 2', sans-serif;
+  background: rgb(111,48,173);
+background: linear-gradient(180deg, rgba(111,48,173,1) 0%, rgba(213,151,225,1) 0%, rgba(57,210,170,1) 100%);
+
+   /*  background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)
+    )
+    ,url("media/pagina2.jpg");*/
+}
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: #FB8BCC; }
+
+header{
+ 
+    background-color: rgba(0,0,0,0);
+      position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+header .logo{
+    margin: 0;
+   /* padding: 25px 30px;*/
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;*/
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2C44BC;
+}
+
+header a:hover{
+    color: #FB8BCC;
+}
+
+
+#elongada .container{
+    text-align: center;
+  /*  padding: 30px 12px;*/
+    
+}
+
+
+
+
+footer{
+    background-color: rgb(230,230,230);
+        margin-top: 50px;
+
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+     font-family: 'Dosis', sans-serif;
+      font-size: 1.5vw;
+      text-align: center;
+     /* height: 700px;*/
+
+}
+
+footer .container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 500px;
+  width: 500px;
+
+}
+
+
+
+
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+.bienvenida  {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-image: url("media/fondito.png");
+}
+iframe {
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+  
+    .galeria{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.galeria img{
+    height: auto;
+  max-width: 400px;
+  padding: 1rem;
+   object-fit: contain;
+}
+
+.galeria iframe{
+   /* height: auto;*/
+  /*max-width: 400px;*/
+  padding: 1rem;
+   object-fit: contain;
+}
+
+    #elongada .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #elongada .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+       /* padding-left: 30px*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    #elongada h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      /*   background: linear-gradient(90deg,  #C8A6EB 30%,  #f5f5f5 20%)
+      /*  background : #C8A6EB; */
+        
+    }
+
+   #elongada .parrafo {
+    display: inline-block; /* Permite que el párrafo se adapte a su contenido */
+    max-width: max-content; /* Limita el ancho al contenido */
+    text-align: center;
+    border: 3px solid black; /* Aplica el borde al párrafo completo */
+    background: white; /* Aplica el fondo blanco al párrafo completo */
+    color: black;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno para el párrafo */
+    font-size: 1.2em; /* Tamaño de fuente */
+}
+
+     
+
+    #elongada .img-container{
+        background-image: url("media/Elonga.png");
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 500px; 
+    }
+
+   
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+                margin-top: 50px;
+
+    }
+
+    #foot p {
+        font-size: 15px;
+
+}
+
+@media  (max-width: 980px) {
+     #elongada {
+
+    height: 100vh;    
+     }
+
+  #elongada .container{
+      
+        display: flex;
+    flex-direction: column-reverse; /* Imagen arriba del texto */
+    justify-content: center;
+    align-items: center;
+    }
+
+     #elongada .img-container{
+        background-image: url("media/mic.png");
+        background-size: cover;
+        background-position: center center;
+        height: 700px;
+        width: 600px; 
+    }
+
+      #elongada h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+            align-items: center;
+                justify-content: center;
+                align-items: center;
+        
+    }
+
+
+     #elongada.parrafo{
+             align-self: center;
+         display:flex;
+       max-width: max-content;
+       text-align: center; 
+
+             }
+
+       #elongada .parrafo span {
+    background: #2C44BC;
+    color: white;
+    border-radius: 10px; 
+     padding: 5px 10px; 
+    font-size: 1.2em;
+        align-self: center;
+              text-align: center;
+
+       }
+
+      #elongada .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    
+     #foot p {
+                  font-size: 10px;
+
+     }
+
+   
+
+
+}
+
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+ 
